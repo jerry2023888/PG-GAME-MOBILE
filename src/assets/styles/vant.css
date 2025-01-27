@@ -1,0 +1,19 @@
+/* vant css 变量覆盖 */
+:root:root {
+    --van-button-primary-background: red;
+    --van-nav-bar-background: #1C2127;
+  }
+
+
+.van-nav-bar {
+  color: #000;
+
+  .van-nav-bar__left,
+  .van-nav-bar__right {
+      padding: 0;
+  }
+}
+
+.van-nav-bar__content{
+  height: 59px;
+}

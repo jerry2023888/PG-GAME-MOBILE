@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <meta name="viewport" content="width=375, initial-scale=1.0">
+
+    <title>Tigger888</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .iframe-wrapper {
+            width: 375px; /* 设计稿宽度 */
+            height: calc(100vh - 20px); /* 保证高度动态适配 */
+            overflow: hidden;
+            position: relative;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            transform-origin: top center;
+            transform: scale(1); /* 默认比例 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="iframe-wrapper">
+        <iframe src="https://website.test001.sererbnace.com/pg-new" title="Tigger888"></iframe>
+    </div>
+    <script>
+        function resizeIframe() {
+            const wrapper = document.querySelector('.iframe-wrapper');
+            const scale = Math.min(window.innerWidth / 375, 1); // 动态缩放比例，基于375px宽设计稿
+            wrapper.style.transform = `scale(${scale})`;
+            wrapper.style.height = `${window.innerHeight / scale}px`; // 保证高度一致
+        }
+
+        window.addEventListener('resize', resizeIframe);
+        resizeIframe(); // 初始化调用
+    </script>
+</body>
+
+</html>

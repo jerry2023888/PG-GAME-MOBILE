@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'FF Nort';
+    src: url('@/assets/fonts/FFNort-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('@/assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'FF Nort', 'Poppins', sans-serif;
+  }
+  

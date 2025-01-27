@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+#Container {
+  background-color: var(--tigger-background-color);
+  color: var(--tigger-default-color);
+  font-family: 'Poppins','Courier New', Courier, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
