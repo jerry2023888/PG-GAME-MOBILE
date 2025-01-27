@@ -12,6 +12,7 @@ import Recharge from "./pages/recharge/Recharge.vue";
 import Notify from "./pages/notify/Notify.vue";
 import Contact from "./pages/contact/Contact.vue";
 import UserInfo from "@/pages/user/UserInfo.vue";
+import Vip from "@/pages/vip/Vip.vue";
 
 export const HomePath = "/";
 export const WithdrawPath = "/withdraw";
@@ -19,8 +20,7 @@ export const RechargePath = "/recharge";
 export const NotifyPath = "/notify";
 export const ContactPath = "/contact";
 export const UserInfoPath = "/user-info";
-
-
+export const VipPath = "/vip";
 
 const authGuard = (
   to: RouteLocationNormalized,
@@ -32,7 +32,6 @@ const authGuard = (
   // if (to.meta.requiresAuth && isLogin) next();
   // else next("/register-name");
 };
-
 
 const routes = [
   // 把默认的/转发到home
@@ -56,7 +55,6 @@ const routes = [
       transitionName: "fade-in",
       keepAlive: true,
       showNav: true,
-
     },
   },
   {
@@ -68,9 +66,9 @@ const routes = [
       transitionName: "fade-in",
       keepAlive: true,
       showNav: true,
-
     },
-  }, {
+  },
+  {
     path: NotifyPath,
     component: Notify,
     beforeEnter: [],
@@ -79,9 +77,9 @@ const routes = [
       transitionName: "fade-in",
       keepAlive: true,
       showNav: true,
-
     },
-  }, {
+  },
+  {
     path: ContactPath,
     component: Contact,
     beforeEnter: [],
@@ -90,7 +88,6 @@ const routes = [
       transitionName: "fade-in",
       keepAlive: true,
       showNav: true,
-
     },
   },
   {
@@ -101,7 +98,18 @@ const routes = [
     meta: {
       transitionName: "fade-in",
       keepAlive: false,
-      requiresAuth: true
+      requiresAuth: true,
+    },
+  },
+  {
+    path: VipPath,
+    component: Vip,
+    beforeEnter: [],
+    name: "Vip",
+    meta: {
+      transitionName: "fade-in",
+      keepAlive: false,
+      requiresAuth: true,
     },
   },
   {
@@ -110,7 +118,7 @@ const routes = [
     name: "not-found",
     meta: {
       transitionName: "fade-in",
-      keepAlive: false
+      keepAlive: false,
     },
   },
 ];

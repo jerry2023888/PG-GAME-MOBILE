@@ -7,5 +7,18 @@
   "Promoção": "Promoção",
   "Saque": "Saque",
   "Mensagem": "Mensagem",
-  "Serviço": "Serviço"
+  "Serviço": "Serviço",
+  "PodeReceberBonus": "Pode Receber Bonus",
+  "Receber": "Receber",
+  "RegistroDeenvioDeBonus": "Registro Deenvio De Bonus",
+  "VolumeAcumuladoDeApostas": "Volume Acumulado De Apostas",
+  "ManterADivisao": "Manter A Divisao",
+  "RendimentosVIP": "Rendimentos VIP",
+  "CondicoesVIP": "Condicoes VIP",
+  "Nivel": "nivel",
+  "Apostas": "apostas",
+  "BonuSupgrade": "bonus upgrade",
+  "BonusSemanal": "bonus semanal",
+  "BonusMensal": "bonus mensal",
+  "DescricaoDaAtividade": "Descricao Da Atividade"
 }
