@@ -20,5 +20,11 @@
   "BonuSupgrade": "bonus upgrade",
   "BonusSemanal": "bonus semanal",
   "BonusMensal": "bonus mensal",
-  "DescricaoDaAtividade": "Descricao Da Atividade"
+  "DescricaoDaAtividade": "Descricao Da Atividade",
+  "InformaçõesDeLogin": "Ao alcancar a meta de check-ins consecutivos,voce recebe uma recompensa extra",
+  "Dia": "Dia",
+  "DiasConsecutivosDeCheckIn": "Dias consecutivos de check-in",
+  "PodeReceber": "Pode Receber",
+  "CheckIn": "Check in",
+  "NaoIniciado": "Nao Iniciado"
 }
