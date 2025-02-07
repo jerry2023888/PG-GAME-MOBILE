@@ -26,5 +26,12 @@
   "DiasConsecutivosDeCheckIn": "Dias consecutivos de check-in",
   "PodeReceber": "Pode Receber",
   "CheckIn": "Check in",
-  "NaoIniciado": "Nao Iniciado"
+  "NaoIniciado": "Nao Iniciado",
+  "FundoDeResagate": "Fundo De Resagate",
+  "Receive": "receive",
+  "Received": "received",
+  "FundoDepósito": "Fundo de Resgate na perda do primeiro depósito",
+  "FundoInformação1": "Quando o saldo da sua carteira de primeiro depósito for menor que um determinado valor, você poderá receber o valor de resgate.",
+  "FundoInformação2": "Recarregar antes do final da contagem regressiva permite que você receba diretamente 30% do valor do primeiro depósito como valor de resgate.",
+  "FundoInformação3": "Recarregar antes do final da contagem regressiva permite que você receba diretamente 30% do valor do primeiro depósito como valor de resgate."
 }

@@ -14,6 +14,7 @@ import Contact from "./pages/contact/Contact.vue";
 import UserInfo from "@/pages/user/UserInfo.vue";
 import Vip from "@/pages/vip/Vip.vue";
 import CheckIn from "@/pages/checkin/CheckIn.vue";
+import Bonus from "@/pages/bonus/Bonus.vue";
 
 export const HomePath = "/";
 export const WithdrawPath = "/withdraw";
@@ -23,6 +24,7 @@ export const ContactPath = "/contact";
 export const UserInfoPath = "/user-info";
 export const VipPath = "/vip";
 export const CheckInPath = "/check-in";
+export const BonusPath = "/bonus";
 
 const authGuard = (
   to: RouteLocationNormalized,
@@ -119,6 +121,17 @@ const routes = [
     component: CheckIn,
     beforeEnter: [],
     name: "CheckIn",
+    meta: {
+      transitionName: "fade-in",
+      keepAlive: false,
+      requiresAuth: true,
+    },
+  },
+  {
+    path: BonusPath,
+    component: Bonus,
+    beforeEnter: [],
+    name: "Bonus",
     meta: {
       transitionName: "fade-in",
       keepAlive: false,
